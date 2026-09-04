@@ -1679,6 +1679,14 @@ body.light-theme {
 
 }
 
+@media screen and (max-width: 576px) {
+  .footer__list {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+
 .footer__social {
 
   display: flex;
