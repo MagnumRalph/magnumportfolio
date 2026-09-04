@@ -188,6 +188,31 @@ img {
 
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container,
+.grid,
+.nav,
+.home__container,
+.about__container,
+.skills__container,
+.services__container,
+.process__container,
+.work__container,
+.contact__container,
+.footer__container {
+  min-width: 0;
+}
+
+.grid > * {
+  min-width: 0;
+}
+
 /*=============== THEME ===============*/
 
 .change__theme {
@@ -314,11 +339,11 @@ body.light-theme {
 
 .container {
 
-  max-width: 968px;
+  width: min(100% - 2rem, 968px);
 
-  margin-left: 1rem;
+  margin-left: auto;
 
-  margin-right: 1rem;
+  margin-right: auto;
 
 }
 
@@ -1262,15 +1287,17 @@ body.light-theme {
 /*=============== IMAGE GALLERY ===============*/
 
 .gallery__container {
-  max-width: 968px;
+  width: min(100% - 2rem, 968px);
+  height: 300px;
   max-height: 300px;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 /* Fixed-height scrollable area */
 .gallery__columns {
   height: 100%;
   overflow-y: auto;
+  min-width: 0;
 
   display: flex;
   gap: 0.5rem;
@@ -1279,7 +1306,8 @@ body.light-theme {
 }
 
 .gallery__column {
-  width: 50%;
+  width: calc(50% - 0.375rem);
+  min-width: 0;
 
   display: flex;
   flex-direction: column;
@@ -1295,7 +1323,7 @@ body.light-theme {
 
 .gallery__item img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   display: block;
 
@@ -1325,28 +1353,52 @@ body.light-theme {
 /*=============== RESPONSIVE ===============*/
 
 @media screen and (max-width: 768px) {
-  .gallery__grid {
-    grid-template-columns: repeat(2, 1fr);
+  .gallery__container {
+    width: min(100% - 1.5rem, 968px);
     height: 450px;
+    max-height: 450px;
+  }
+
+  .gallery__columns {
+    gap: 0.5rem;
+  }
+
+  .gallery__column {
+    width: calc(50% - 0.25rem);
   }
 
   .gallery__item img {
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .gallery__container {
+    width: calc(100% - 1rem);
+    height: 450px;
+    max-height: 450px;
+  }
+
   .gallery__columns {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     height: 100%;
     overflow-y: auto;
-    gap: 0.75rem;
+    overflow-x: hidden;
+    gap: 0.5rem;
   }
 
   .gallery__column {
-    width: 100%;
-
+    width: calc(50% - 0.25rem);
+    flex: 0 0 calc(50% - 0.25rem);
     padding-bottom: 0.5rem;
+  }
+
+  .gallery__item img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1827,7 +1879,7 @@ body.light-theme {
 
     padding: 1rem 5rem;
 
-    width: 600px;
+    width: min(100%, 600px);
 
     margin: 0 auto 2rem auto;
 
@@ -1903,7 +1955,7 @@ body.light-theme {
 
   .testimonial__container {
 
-    width: 600px;
+    width: min(100%, 600px);
 
     margin: auto;
 
@@ -1931,7 +1983,7 @@ body.light-theme {
 
   .contact__form {
 
-    width: 340px;
+    width: min(100%, 340px);
 
   }
 
@@ -2089,7 +2141,9 @@ body.light-theme {
 
   .skills__container {
 
-    grid-template-columns: repeat(2, 460px);
+    grid-template-columns: repeat(2, minmax(0, 460px));
+
+    width: min(100%, 968px);
 
     column-gap: 3rem;
 
@@ -2103,7 +2157,9 @@ body.light-theme {
 
   .services__container {
 
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, minmax(0, 300px));
+
+    width: min(100%, 968px);
 
     column-gap: 2rem;
 
@@ -2143,7 +2199,7 @@ body.light-theme {
 
   .testimonial__container {
 
-    width: 970px;
+    width: min(100%, 970px);
 
   }
 
@@ -2155,7 +2211,7 @@ body.light-theme {
 
   .contact__info {
 
-    grid-template-columns: 430px;
+    grid-template-columns: minmax(0, 430px);
 
     gap: 1rem;
 
@@ -2163,7 +2219,7 @@ body.light-theme {
 
   .contact__form {
 
-    width: 430px;
+    width: min(100%, 430px);
 
   }
 
@@ -2175,7 +2231,9 @@ body.light-theme {
 
   .contact__container {
 
-    grid-template-columns: repeat(2, 430px);
+    grid-template-columns: repeat(2, minmax(0, 430px));
+
+    width: min(100%, 968px);
 
     column-gap: 6rem;
 
