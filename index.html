@@ -1,1134 +1,1379 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--=============== FAVICON ===============-->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-j-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-j-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-j-16x16.png">
+<link rel="manifest" href="assets/favicons/site.webmanifest">
+<link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="assets/favicons/favicon-j.png">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-j-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-j-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-j-16x16.png">
-    <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/favicons/favicon-j.png">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#a789d4">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+<meta name="theme-color" content="#a789d4">
 
-    <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<!--=============== BOXICONS ===============-->
+<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<!--=============== SWIPER CSS ===============-->
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+<!--=============== CSS ===============-->
+<link rel="stylesheet" href="assets/css/styles.css">
 
-    <title> Magnum's Portfolio </title>
-</head>
+<title>Magnum's Portfolio</title>
 
-<body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Magnum</a>
+</head><body><!--=============== HEADER ===============-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">Magnum</a>
 
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item ">
-                        <a href="#home" class="nav__link">
-                            <i class='bx bx-home'></i>
-                        </a>
-                    </li>
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">
+                        <i class="bx bx-home"></i>
+                    </a>
+                </li>
 
-                    <li class="nav__item ">
-                        <a href="#about" class="nav__link">
-                            <i class='bx bx-user'></i>
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class="bx bx-user"></i>
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-book'></i>
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="bx bx-book"></i>
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#process" class="nav__link">
-                            <i class='bx bx-git-branch'></i>
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#process" class="nav__link">
+                        <i class="bx bx-git-branch"></i>
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link">
-                            <i class='bx bx-briefcase-alt-2'></i>
-                        </a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#work" class="nav__link">
+                        <i class="bx bx-briefcase-alt-2"></i>
+                    </a>
+                </li>
 
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bx-message-square-dots'></i>
-                        </a>
-                    </li>
-                </ul>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                        <i class="bx bx-message-square-dots"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--=============== THEME CHANGE BUTTON ===============-->
+        <i class="bx bx-moon change-theme change-theme-button" id="theme-button"></i>
+    </nav>
+</header>
+
+
+<!--=============== MAIN ===============-->
+<main class="main">
+
+    <!--=============== HOME ===============-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+
+            <div class="home__data">
+                <span class="home__greeting">Hello, I'm</span>
+
+                <h1 class="home__name">
+                    Oyenibi Joseph Magnum-Ralph
+                </h1>
+
+                <h3 class="home__education">
+                    Mechatronics Engineer, Developer & Designer
+                </h3>
+
+                <div class="home__button">
+                    <a download href="assets/pdf/joseph-oyenibi-cv.pdf" class="button button--ghost">
+                        Download CV
+                    </a>
+
+                    <a href="#about" class="button">
+                        About
+                    </a>
+                </div>
             </div>
 
-            <!--=============== theme change button ===============-->
-            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+            <div class="home__handle">
+                <img src="assets/img/joseph.png" alt="Oyenibi Joseph Magnum-Ralph" class="home__img">
+            </div>
 
-        </nav>
-    </header>
+            <div class="home__social">
+                <a href="https://api.whatsapp.com/send?phone=+2349133019321&text=Hey%20there!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="home__social-link"
+                    aria-label="WhatsApp">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hello, I'm</span>
-                    <h1 class="home__name">Oyenibi Joseph Magnum-Ralph</h1>
-                    <h3 class="home__education">Mechatronics Engineer, Developer & Designer</h3>
+                <a href="https://www.instagram.com/m.a.g_n.u.m"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="home__social-link"
+                    aria-label="Instagram">
+                    <i class="bx bxl-instagram"></i>
+                </a>
 
-                    <div class="home__button">
-                        <a download="" href="assets/pdf/joseph-oyenibi-cv.pdf" class="button button--ghost">
-                            Download CV
-                        </a>
-
-                        <a href="#about" class="button">About</a>
-                    </div>
-                </div>
-
-                <div class="home__handle">
-                    <img src="assets/img/joseph.png" alt="" class="home__img">
-                </div>
-
-                <div class="home__social">
-                    <a href="https://api.whatsapp.com/send?phone=+2349133019321&text=Hey there!" target="_blank" class="home__social-link">
-                        <i class='bx bxl-whatsapp'></i>
-                    </a>
-                    <a href="https://www.instagram.com/m.a.g_n.u.m" target="_blank" class="home__social-link">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-                    <a href="https://www.facebook.com/share/1D1Z1Qkubw/" target="_blank" class="home__social-link">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                </div>
-
-                <a href="#about" class="home__scroll">
-                    <i class='bx bx-mouse home__scroll-icon'></i>
-                    <span class="home__scroll-name">Scroll Down</span>
+                <a href="https://www.facebook.com/share/1D1Z1Qkubw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="home__social-link"
+                    aria-label="Facebook">
+                    <i class="bx bxl-facebook"></i>
                 </a>
             </div>
-        </section>
 
-        <!--=============== ABOUT ===============-->
-        <section class="about section" id="about">
-            <span class="section__subtitle">My Intro</span>
-            <h2 class="section__title">About Me</h2>
+            <a href="#about" class="home__scroll">
+                <i class="bx bx-mouse home__scroll-icon"></i>
+                <span class="home__scroll-name">Scroll Down</span>
+            </a>
 
-            <div class="about__container container grid">
-                <img src="assets/img/joseph2.jpg" alt="" class="about__img">
-
-                <div class="about__data">
-                    
-
-                    <p class="about__description">
-                        I am Oyenibi Joseph Magnum-ralph, a Mechatronics Engineering graduate, developer, designer, and technology enthusiast.</br>
-                        I develop websites, create digital graphics and user interfaces, and build practical engineering projects. I started my journey in web development and digital design and have continued expanding my skills through freelance projects, academic work, personal projects, and hands-on engineering experience.</br>
-                        I enjoy learning, experimenting with new technologies, solving problems, and turning ideas into solutions that are both functional and user-friendly.
-                    </p>
-
-                    <a href="#contact" class="button about__button-contact">Contact Me</a>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SKILLS ===============-->
-        <section class="skills section" id="skills">
-            <span class="section__subtitle">My Abilities</span>
-            <h2 class="section__title">My Skills</h2>
-
-            <div class="skills__container container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title">Web Development</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">CSS/SCSS</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Javascript</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">WordPress</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Elementor</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills__content">
-                    <h3 class="skills__title">Embedded Systems</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">RaspberryPi</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Arduino</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">MotorControl</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">ROS</h3>
-                                    <span class="skills__level">Beginner</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">LiDAR</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Sensors</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills__content">
-                        <h3 class="skills__title">UI/UX & Design</h3>
-    
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check'></i>
-    
-                                    <div>
-                                        <h3 class="skills__name">Figma</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check'></i>
-    
-                                    <div>
-                                        <h3 class="skills__name">Photoshop</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-    
-                            </div>
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check'></i>
-    
-                                    <div>
-                                        <h3 class="skills__name">UIDesign</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check'></i>
-    
-                                    <div>
-                                        <h3 class="skills__name">GraphicDesign</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-    
-                            </div>
-                        </div>
-                </div>
-                    
-                <div class="skills__content">
-                    <h3 class="skills__title">Engineering</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">AutoCAD</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">MATLAB/Simulink</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Proteus</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">PrimaveraP6</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills__content">
-                    <h3 class="skills__title">Programming</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Arduino</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Javascript</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-        </section>
-
-        <!--=============== SERVICES ===============-->
-        <section class="services section">
-            <span class="section__subtitle">My Services</span>
-            <h2 class="section__title">What I Do</h2>
-
-            <div class="services__container container grid">
-                <div class="services__card">
-                    <div class="serv">
-                        <h3 class="services__title">Web <br>Development</h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow services__icon'></i>
-                        </span>
-                    </div>
-
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Web Development</h3>
-
-                            <p class="services__modal-description">
-                                Designing and developing responsive websites for businesses, organizations, and personal brands.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services__card">
-                    <h3 class="services__title">UI/UX <br> Design</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">UI/UX Design</h3>
-
-                            <p class="services__modal-description">
-                                Designing intuitive and visually appealing interfaces with a focus on usability and user experience.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services__card">
-                    <h3 class="services__title">Graphics <br> Design</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Graphics Designing</h3>
-
-                            <p class="services__modal-description">
-                                Creating engaging graphics for social media, marketing, branding, presentations, and digital communication.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services__card">
-                    <div class="serv">
-                        <h3 class="services__title">Robotics & <br>Automation</h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow services__icon'></i>
-                        </span>
-                    </div>
-
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Robotics & Automation</h3>
-
-                            <p class="services__modal-description">
-                                Developing and exploring robotic and automated systems that combine hardware, software, sensors, and control.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services__card">
-                    <h3 class="services__title">Embedded <br>Systems</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Embedded Systems</h3>
-
-                            <p class="services__modal-description">
-                                Building microcontroller-based systems using sensors, actuators, motors, and electronic components.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services__card">
-                    <h3 class="services__title">Engineering <br> Design</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Engineering Design</h3>
-
-                            <p class="services__modal-description">
-                                Applying engineering principles, CAD, electronics, programming, and system integration to solve practical problems.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--=============== PROCESS ===============-->
-        <section class="process section" id="process">
-            <span class="section__subtitle">My Approach</span>
-            <h2 class="section__title">Why Work With Me</h2>
-
-            <div class="process__container container grid">
-                <div class="process__card">
-                    <span class="process__number">01</span>
-                    <h3 class="process__title">Understand</h3>
-                    <p class="process__description">
-                        I begin by understanding the problem, requirements, and objectives.
-                    </p>
-                </div>
-
-                <div class="process__card">
-                    <span class="process__number">02</span>
-                    <h3 class="process__title">Plan</h3>
-                    <p class="process__description">
-                        I break the problem down and develop a clear approach to solving it.
-                    </p>
-                </div>
-
-                <div class="process__card">
-                    <span class="process__number">03</span>
-                    <h3 class="process__title">Design</h3>
-                    <p class="process__description">
-                        I create the system, interface, visual concept, or technical solution.
-                    </p>
-                </div>
-
-                <div class="process__card">
-                    <span class="process__number">04</span>
-                    <h3 class="process__title">Build</h3>
-                    <p class="process__description">
-                        I turn the design into a functional website, digital product, prototype, or engineering system.
-                    </p>
-                </div>
-
-                <div class="process__card">
-                    <span class="process__number">05</span>
-                    <h3 class="process__title">Test &amp; Improve</h3>
-                    <p class="process__description">
-                        I test the result, identify areas for improvement, and refine the final solution.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== WORK ===============-->
-        <section class="work section" id="work">
-            <span class="section__subtitle">My Portfolio</span>
-            <h2 class="section__title">Recent Works</h2>
-
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter='all'>All</span>
-                <span class=" work__item" data-filter='.web'>Web</span>
-                <span class=" work__item" data-filter='.movil'>Engineering</span>
-                <span class=" work__item" data-filter='.design'>Design</span>
-            </div>
-
-            <div class="work__container container grid">
-                <div class="work__card mix web">
-                    <img src="assets/img/nc.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Nuvelle Consulting</h3>
-
-                    <a href="https://www.nuvelleconsulting.com" class="work__button">
-                        See More <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/mesl.png" alt="" class="work__img">
-
-                    <h3 class="work__title">SIWES: MESL Trainee</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">SIWES Projects & Experience at <br>MORPOL Engineering Services Limited</h3>
-
-                        <p class="services__modal-description">
-                            <ul>
-                                <li class='bx bxs-badge-check'><b> 200 kVA Transformer</b> — Installation, termination & electrical testing.</li>
-                                <li class='bx bxs-badge-check'><b> Emergency Evacuation Plan</b> — AutoCAD safety layout with HSE features.</li>
-                                <li class='bx bxs-badge-check'><b> Transformer Platform</b> — Assisted with concrete foundation construction.</li>
-                                <li class='bx bxs-badge-check'><b> MTO & BOQ</b> — Assisted with material estimation and documentation.</li>
-                                <li class='bx bxs-badge-check'><b> Engineering Documentation</b> — Logged vehicles, tools & equipment.</li>
-                                <li class='bx bxs-badge-check'><b> AutoCAD Design</b> — Technical drawings and engineering layouts.</li>
-                            </ul>                          
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="work__card mix design">
-                    <img src="assets/img/gdf.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Gokeville Diabetes (UI Design)</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">Gokeville Diabetes Foundation <br>(UI Design)</h3>
-
-                        <div class="gallery__container container">
-                            <div class="gallery__columns">
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gdf2.png" alt="Gokeville DiabetesF" class="gallery__img">
-                                    </div>
-                                </div>
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gdf1.png" alt="Gokeville DiabetesF" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gdf.png" alt="Gokeville DiabetesF" class="gallery__img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__fade"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/agv.png" alt="" class="work__img">
-
-                    <h3 class="work__title">AGV Navigation System</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">AGV Navigation System</h3>
-
-                        <p class="services__modal-description">
-                            <b>Category:</b>
-                            <br>Robotics / Machine Learning
-                            <br><br><b>Description:</b>
-                            <br>A final-year project focused on navigation control of an Automatic Guided Vehicle using imitation learning, LiDAR-based sensing, and robotic control.
-                            <br><br><b>Technologies:</b>
-                            <br><i>ROS · Python · Raspberry Pi · Arduino · LiDAR · DC Motors · Machine Learning</i>                      
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="work__card mix design">
-                    <img src="assets/img/graphics.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Graphics Design</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">Graphics Design</h3>
-
-                        <div class="gallery__container container">
-                            <div class="gallery__columns">
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr1.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr2.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr3.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr4.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr5.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                </div>
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr6.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr7.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr8.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/gr9.png" alt="Graphics Design" class="gallery__img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__fade"></div>
-                               
-                        </div>
-                        <p class="services__modal-description">
-                            <br><br><i>This is only a selection of my work<br>
-                            Want to see more? Let's connect.</i>
-                        </p> 
-                    </div>
-                </div>
-
-                <div class="work__card mix web">
-                    <img src="assets/img/sb.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Space Button Architecture</h3>
-
-                    <a href="https://www.spacebuttonarchitecture.com" class="work__button">
-                        See More <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix design">
-                    <img src="assets/img/logo.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Logo Design</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">Logo Design</h3>
-
-                        <div class="gallery__container container">
-                            <div class="gallery__columns">
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l1.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l2.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l3.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l4.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l5.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                </div>
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l6.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l7.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l8.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l9.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/l0.png" alt="Logo Design" class="gallery__img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__fade"></div>
-                               
-                        </div>
-                        <p class="services__modal-description">
-                            <br><br><i>This is only a selection of my work<br>
-                            Want to see more? Let's connect.</i>
-                        </p> 
-                    </div>
-                </div>
-
-                <div class="work__card mix design">
-                    <img src="assets/img/z.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Zen Wireframe</h3>
-
-                    <a href="https://www.figma.com/design/ncvY4fveeSc8Ubu84VmQJi/Zen?node-id=0-1" class="work__button">
-                        See More <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix web">
-                    <img src="assets/img/rr.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Rock Realty Limited</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">Rock Realty Limited</h3>
-
-                        <div class="gallery__container container">
-                            <div class="gallery__columns">
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/rr.png" alt="Rock Realty Limited" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/rr1.png" alt="Rock Realty Limited" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/rr2.png" alt="Rock Realty Limited" class="gallery__img">
-                                    </div>
-                                </div>
-                                <div class="gallery__column">
-                                    <div class="gallery__item">
-                                        <img src="assets/img/rr4.png" alt="Rock Realty Limited" class="gallery__img">
-                                    </div>
-                                    <div class="gallery__item">
-                                        <img src="assets/img/rr5.png" alt="Rock Realty Limited" class="gallery__img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__fade"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/fpws.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Fingerprint Wooden Safe</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">Fingerprint & Solenoid <br>Lock Wooden Safe</h3>
-
-                        <p class="services__modal-description">
-                            <b>Category:</b>
-                            <br>Embedded Systems / Electronics
-                            <br><br><b>Description:</b>
-                            <br>An Arduino-based security system combining fingerprint authentication with a solenoid locking mechanism to provide controlled access.
-                            <br><br><b>Technologies:</b>
-                            <br><i>Arduino · Fingerprint Sensor · Solenoid Lock · Electronics</i>                      
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="work__card mix web">
-                    <img src="assets/img/others1.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Other Active Websites</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">Other Active Websites</h3>
-
-                        <p class="services__modal-description">
-                            <ul>
-                                <li class='bx bxs-badge-check'><a href="https://www.dukelicit.com"> dukelicit.com</a></li><br>
-                                <li class='bx bxs-badge-check'><a href="https://www.progolmedia.com"> progolmedia.com</a></li><br>
-                                <li class='bx bxs-badge-check'><a href="https://www.joazubogu.com"> joazubogu.com</a></li><br>
-                                <li class='bx bxs-badge-check'><a href="https://www.gokevillediabetesfoundation.org"> gokevillediabetesfoundation.org</a></li></ul>
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/others2.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Other Engineering Projects</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-                <div class="services__modal">
-                    <div class="services__modal-content">
-                        <i class='bx bx-x services__modal-close'></i>
-
-                        <h3 class="services__modal-title">Other Engineering Projects</h3>
-
-                        <p class="services__modal-description">
-                            <ul>
-                                <li class='bx bxs-badge-check'> IR remote controlled fan with proteus</li>
-                                <li class='bx bxs-badge-check'> Rechargeable light with type c panel</li>
-                                <li class='bx bxs-badge-check'> Solar stove with battery</li>
-                            </ul>                      
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--=============== CONTACT ===============-->
-        <section class="contact section" id="contact">
-            <sapn class="section__subtitle">Get in touch</sapn>
-            <h3 class="section__title">Contact Me</h3>
-
-            <div class="contact__container container grid">
-                <div class="contact__content">
-                    <h3 class="contact__title contact__title-info">Talk to me</h3>
-
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class='bx bx-mail-send contact__card-icon'></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">malphey04@gmail.com</span>
-
-                            <a href="mailto:malphey04@gmail.com" target="_blank" class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
-                            </a>
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bxl-whatsapp contact__card-icon'></i>
-                            <h3 class="contact__card-title">Whatsapp</h3>
-                            <span class="contact__card-data">09133019321</span>
-
-                            <a href="https://api.whatsapp.com/send?phone=+2349133019321&text=Hey there!" target="_blank"
-                                class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
-                            </a>
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bxl-instagram contact__card-icon'></i>
-                            <h3 class="contact__card-title">Instagram</h3>
-                            <span class="contact__card-data">m.a.g_n.u.m</span>
-
-                            <a href="https://www.instagram.com/m.a.g_n.u.m" target="_blank" class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact__content">
-                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
-
-                    <form id="contact-form" action="https://formspree.io/f/mdeozzbw" method="POST" class="contact__form">
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" name= "name" placeholder="Enter name" class="contact__form-input" required>
-                        </div>
-
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input type="email" name="email" placeholder="Enter email" class="contact__form-input" required>
-                        </div>
-
-                        <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your Message"
-                                class="contact__form-input " required></textarea>
-                        </div>
-
-
-                        <button id="submit-btn" type= "submit" class="button">
-                            Send Message
-                        </button>
-                        <p id="form-status"></p>
-                    </form>
-
-                </div>
-
-        </section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-        <div class="footer__container container">
-            <h1 class="footer__title">Magnum</h1>
-
-            <ul class="footer__list">
-
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Home</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#about" class="footer__link">About</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#skills" class="footer__link">Skills</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#process" class="footer__link">Process</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#work" class="footer__link">Work</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#contact" class="footer__link">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="footer__social">
-                <li class="footer__social-item">
-                    <a href="https://www.facebook.com/share/1D1Z1Qkubw/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="https://www.instagram.com/m.a.g_n.u.m" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-linkedin footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="https://api.whatsapp.com/send?phone=+2349133019321&text=Hey there!" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-whatsapp footer__social-icon'></i>
-                    </a>
-                </li>
-            </ul>
-
-            <span class="footer__copy">
-                &#169; 2026 MAGNUM. All rights reserved.
-            </span>
         </div>
-    </footer>
+    </section>
 
-    <!--=============== SCROLLREVEAL ===============-->
 
-    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--=============== ABOUT ===============-->
+    <section class="about section" id="about">
+        <span class="section__subtitle">My Intro</span>
+        <h2 class="section__title">About Me</h2>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+        <div class="about__container container grid">
+            <img src="assets/img/joseph2.jpg"
+                alt="Oyenibi Joseph Magnum-Ralph"
+                class="about__img">
 
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
+            <div class="about__data">
+                <p class="about__description">
+                    I am Oyenibi Joseph Magnum-ralph, a Mechatronics Engineering graduate, developer, designer, and technology enthusiast.<br>
+                    I develop websites, create digital graphics and user interfaces, and build practical engineering projects. I started my journey in web development and digital design and have continued expanding my skills through freelance projects, academic work, personal projects, and hands-on engineering experience.<br>
+                    I enjoy learning, experimenting with new technologies, solving problems, and turning ideas into solutions that are both functional and user-friendly.
+                </p>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+                <a href="#contact" class="button about__button-contact">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--=============== SKILLS ===============-->
+    <section class="skills section" id="skills">
+        <span class="section__subtitle">My Abilities</span>
+        <h2 class="section__title">My Skills</h2>
+
+        <div class="skills__container container grid">
+
+            <!--=============== WEB DEVELOPMENT ===============-->
+            <div class="skills__content">
+                <h3 class="skills__title">Web Development</h3>
+
+                <div class="skills__box">
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">CSS/SCSS</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Javascript</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">WordPress</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Elementor</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== EMBEDDED SYSTEMS ===============-->
+            <div class="skills__content">
+                <h3 class="skills__title">Embedded Systems</h3>
+
+                <div class="skills__box">
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">RaspberryPi</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Arduino</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">MotorControl</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">ROS</h3>
+                                <span class="skills__level">Beginner</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">LiDAR</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Sensors</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== UI/UX & DESIGN ===============-->
+            <div class="skills__content">
+                <h3 class="skills__title">UI/UX & Design</h3>
+
+                <div class="skills__box">
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Figma</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Photoshop</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">UIDesign</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">GraphicDesign</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== ENGINEERING ===============-->
+            <div class="skills__content">
+                <h3 class="skills__title">Engineering</h3>
+
+                <div class="skills__box">
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">AutoCAD</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">MATLAB/Simulink</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Proteus</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">PrimaveraP6</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== PROGRAMMING ===============-->
+            <div class="skills__content">
+                <h3 class="skills__title">Programming</h3>
+
+                <div class="skills__box">
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Arduino</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="bx bxs-badge-check"></i>
+                            <div>
+                                <h3 class="skills__name">Javascript</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--=============== SERVICES ===============-->
+    <section class="services section">
+        <span class="section__subtitle">My Services</span>
+        <h2 class="section__title">What I Do</h2>
+
+        <div class="services__container container grid">
+
+            <div class="services__card">
+                <div class="serv">
+                    <h3 class="services__title">Web <br>Development</h3>
+
+                    <span class="services__button">
+                        See More <i class="bx bx-right-arrow services__icon"></i>
+                    </span>
+                </div>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class="bx bx-x services__modal-close"></i>
+
+                        <h3 class="services__modal-title">Web Development</h3>
+
+                        <p class="services__modal-description">
+                            Designing and developing responsive websites for businesses, organizations, and personal brands.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services__card">
+                <h3 class="services__title">UI/UX <br> Design</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class="bx bx-x services__modal-close"></i>
+
+                        <h3 class="services__modal-title">UI/UX Design</h3>
+
+                        <p class="services__modal-description">
+                            Designing intuitive and visually appealing interfaces with a focus on usability and user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services__card">
+                <h3 class="services__title">Graphics <br> Design</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class="bx bx-x services__modal-close"></i>
+
+                        <h3 class="services__modal-title">Graphics Designing</h3>
+
+                        <p class="services__modal-description">
+                            Creating engaging graphics for social media, marketing, branding, presentations, and digital communication.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services__card">
+                <div class="serv">
+                    <h3 class="services__title">Robotics & <br>Automation</h3>
+
+                    <span class="services__button">
+                        See More <i class="bx bx-right-arrow services__icon"></i>
+                    </span>
+                </div>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class="bx bx-x services__modal-close"></i>
+
+                        <h3 class="services__modal-title">Robotics & Automation</h3>
+
+                        <p class="services__modal-description">
+                            Developing and exploring robotic and automated systems that combine hardware, software, sensors, and control.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services__card">
+                <h3 class="services__title">Embedded <br>Systems</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class="bx bx-x services__modal-close"></i>
+
+                        <h3 class="services__modal-title">Embedded Systems</h3>
+
+                        <p class="services__modal-description">
+                            Building microcontroller-based systems using sensors, actuators, motors, and electronic components.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services__card">
+                <h3 class="services__title">Engineering <br> Design</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class="bx bx-x services__modal-close"></i>
+
+                        <h3 class="services__modal-title">Engineering Design</h3>
+
+                        <p class="services__modal-description">
+                            Applying engineering principles, CAD, electronics, programming, and system integration to solve practical problems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--=============== PROCESS ===============-->
+    <section class="process section" id="process">
+        <span class="section__subtitle">My Approach</span>
+        <h2 class="section__title">Why Work With Me</h2>
+
+        <div class="process__container container grid">
+
+            <div class="process__card">
+                <span class="process__number">01</span>
+                <h3 class="process__title">Understand</h3>
+                <p class="process__description">
+                    I begin by understanding the problem, requirements, and objectives.
+                </p>
+            </div>
+
+            <div class="process__card">
+                <span class="process__number">02</span>
+                <h3 class="process__title">Plan</h3>
+                <p class="process__description">
+                    I break the problem down and develop a clear approach to solving it.
+                </p>
+            </div>
+
+            <div class="process__card">
+                <span class="process__number">03</span>
+                <h3 class="process__title">Design</h3>
+                <p class="process__description">
+                    I create the system, interface, visual concept, or technical solution.
+                </p>
+            </div>
+
+            <div class="process__card">
+                <span class="process__number">04</span>
+                <h3 class="process__title">Build</h3>
+                <p class="process__description">
+                    I turn the design into a functional website, digital product, prototype, or engineering system.
+                </p>
+            </div>
+
+            <div class="process__card">
+                <span class="process__number">05</span>
+                <h3 class="process__title">Test &amp; Improve</h3>
+                <p class="process__description">
+                    I test the result, identify areas for improvement, and refine the final solution.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--=============== WORK ===============-->
+    <section class="work section" id="work">
+        <span class="section__subtitle">My Portfolio</span>
+        <h2 class="section__title">Recent Works</h2>
+
+        <div class="work__filters">
+            <span class="work__item active-work" data-filter="all">All</span>
+            <span class="work__item" data-filter=".web">Web</span>
+            <span class="work__item" data-filter=".movil">Engineering</span>
+            <span class="work__item" data-filter=".design">Design</span>
+        </div>
+
+        <div class="work__container container grid">
+
+            <!--=============== NUVELLE CONSULTING ===============-->
+            <div class="work__card mix web">
+                <img src="assets/img/nc.png" alt="Nuvelle Consulting" class="work__img">
+
+                <h3 class="work__title">Nuvelle Consulting</h3>
+
+                <a href="https://www.nuvelleconsulting.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work__button">
+                    See More <i class="bx bx-right-arrow work__icon"></i>
+                </a>
+            </div>
+
+
+            <!--=============== SIWES ===============-->
+            <div class="work__card mix movil">
+                <img src="assets/img/mesl.png" alt="SIWES: MESL Trainee" class="work__img">
+
+                <h3 class="work__title">SIWES: MESL Trainee</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">
+                        SIWES Projects &amp; Experience at <br>
+                        MORPOL Engineering Services Limited
+                    </h3>
+
+                    <div class="services__modal-description">
+                        <ul>
+                            <li class="bx bxs-badge-check"><b> 200 kVA Transformer</b> — Installation, termination &amp; electrical testing.</li>
+                            <li class="bx bxs-badge-check"><b> Emergency Evacuation Plan</b> — AutoCAD safety layout with HSE features.</li>
+                            <li class="bx bxs-badge-check"><b> Transformer Platform</b> — Assisted with concrete foundation construction.</li>
+                            <li class="bx bxs-badge-check"><b> MTO &amp; BOQ</b> — Assisted with material estimation and documentation.</li>
+                            <li class="bx bxs-badge-check"><b> Engineering Documentation</b> — Logged vehicles, tools &amp; equipment.</li>
+                            <li class="bx bxs-badge-check"><b> AutoCAD Design</b> — Technical drawings and engineering layouts.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== GOKEVILLE DIABETES ===============-->
+            <div class="work__card mix design">
+                <img src="assets/img/gdf.png" alt="Gokeville Diabetes UI Design" class="work__img">
+
+                <h3 class="work__title">Gokeville Diabetes (UI Design)</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">
+                        Gokeville Diabetes Foundation <br>(UI Design)
+                    </h3>
+
+                    <div class="gallery__container container">
+                        <div class="gallery__columns">
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/gdf2.png" alt="Gokeville DiabetesF" class="gallery__img">
+                                </div>
+                            </div>
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/gdf1.png" alt="Gokeville DiabetesF" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gdf.png" alt="Gokeville DiabetesF" class="gallery__img">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="gallery__fade"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== AGV ===============-->
+            <div class="work__card mix movil">
+                <img src="assets/img/agv.png" alt="AGV Navigation System" class="work__img">
+
+                <h3 class="work__title">AGV Navigation System</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">
+                        AGV Navigation System
+                    </h3>
+
+                    <p class="services__modal-description">
+                        <b>Category:</b>
+                        <br>Robotics / Machine Learning
+
+                        <br><br><b>Description:</b>
+                        <br>
+                        A final-year project focused on navigation control of an Automatic Guided Vehicle using imitation learning, LiDAR-based sensing, and robotic control.
+
+                        <br><br><b>Technologies:</b>
+                        <br>
+                        <i>ROS · Python · Raspberry Pi · Arduino · LiDAR · DC Motors · Machine Learning</i>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!--=============== GRAPHICS DESIGN ===============-->
+            <div class="work__card mix design">
+                <img src="assets/img/graphics.png" alt="Graphics Design" class="work__img">
+
+                <h3 class="work__title">Graphics Design</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">Graphics Design</h3>
+
+                    <div class="gallery__container container">
+                        <div class="gallery__columns">
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr1.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr2.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr3.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr4.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr5.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+                            </div>
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr6.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr7.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr8.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/gr9.png" alt="Graphics Design" class="gallery__img">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="gallery__fade"></div>
+                    </div>
+
+                    <p class="services__modal-description">
+                        <br><br>
+                        <i>
+                            This is only a selection of my work<br>
+                            Want to see more? Let's connect.
+                        </i>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!--=============== SPACE BUTTON ARCHITECTURE ===============-->
+            <div class="work__card mix web">
+                <img src="assets/img/sb.png" alt="Space Button Architecture" class="work__img">
+
+                <h3 class="work__title">Space Button Architecture</h3>
+
+                <a href="https://www.spacebuttonarchitecture.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work__button">
+                    See More <i class="bx bx-right-arrow work__icon"></i>
+                </a>
+            </div>
+
+
+            <!--=============== LOGO DESIGN ===============-->
+            <div class="work__card mix design">
+                <img src="assets/img/logo.png" alt="Logo Design" class="work__img">
+
+                <h3 class="work__title">Logo Design</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">Logo Design</h3>
+
+                    <div class="gallery__container container">
+                        <div class="gallery__columns">
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/l1.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l2.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l3.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l4.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l5.png" alt="Logo Design" class="gallery__img">
+                                </div>
+                            </div>
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/l6.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l7.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l8.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l9.png" alt="Logo Design" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/l0.png" alt="Logo Design" class="gallery__img">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="gallery__fade"></div>
+                    </div>
+
+                    <p class="services__modal-description">
+                        <br><br>
+                        <i>
+                            This is only a selection of my work<br>
+                            Want to see more? Let's connect.
+                        </i>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!--=============== ZEN WIREFRAME ===============-->
+            <div class="work__card mix design">
+                <img src="assets/img/z.png" alt="Zen Wireframe" class="work__img">
+
+                <h3 class="work__title">Zen Wireframe</h3>
+
+                <a href="https://www.figma.com/design/ncvY4fveeSc8Ubu84VmQJi/Zen?node-id=0-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work__button">
+                    See More <i class="bx bx-right-arrow work__icon"></i>
+                </a>
+            </div>
+
+
+            <!--=============== ROCK REALTY ===============-->
+            <div class="work__card mix web">
+                <img src="assets/img/rr.png" alt="Rock Realty Limited" class="work__img">
+
+                <h3 class="work__title">Rock Realty Limited</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">Rock Realty Limited</h3>
+
+                    <div class="gallery__container container">
+                        <div class="gallery__columns">
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/rr.png" alt="Rock Realty Limited" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/rr1.png" alt="Rock Realty Limited" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/rr2.png" alt="Rock Realty Limited" class="gallery__img">
+                                </div>
+                            </div>
+
+                            <div class="gallery__column">
+                                <div class="gallery__item">
+                                    <img src="assets/img/rr4.png" alt="Rock Realty Limited" class="gallery__img">
+                                </div>
+
+                                <div class="gallery__item">
+                                    <img src="assets/img/rr5.png" alt="Rock Realty Limited" class="gallery__img">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="gallery__fade"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== FINGERPRINT WOODEN SAFE ===============-->
+            <div class="work__card mix movil">
+                <img src="assets/img/fpws.png" alt="Fingerprint Wooden Safe" class="work__img">
+
+                <h3 class="work__title">Fingerprint Wooden Safe</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">
+                        Fingerprint &amp; Solenoid <br>
+                        Lock Wooden Safe
+                    </h3>
+
+                    <p class="services__modal-description">
+                        <b>Category:</b>
+                        <br>Embedded Systems / Electronics
+
+                        <br><br><b>Description:</b>
+                        <br>
+                        An Arduino-based security system combining fingerprint authentication with a solenoid locking mechanism to provide controlled access.
+
+                        <br><br><b>Technologies:</b>
+                        <br>
+                        <i>Arduino · Fingerprint Sensor · Solenoid Lock · Electronics</i>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <!--=============== OTHER ACTIVE WEBSITES ===============-->
+            <div class="work__card mix web">
+                <img src="assets/img/others1.png" alt="Other Active Websites" class="work__img">
+
+                <h3 class="work__title">Other Active Websites</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">Other Active Websites</h3>
+
+                    <div class="services__modal-description">
+                        <ul>
+                            <li class="bx bxs-badge-check">
+                                <a href="https://www.dukelicit.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    dukelicit.com
+                                </a>
+                            </li>
+
+                            <br>
+
+                            <li class="bx bxs-badge-check">
+                                <a href="https://www.progolmedia.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    progolmedia.com
+                                </a>
+                            </li>
+
+                            <br>
+
+                            <li class="bx bxs-badge-check">
+                                <a href="https://www.joazubogu.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    joazubogu.com
+                                </a>
+                            </li>
+
+                            <br>
+
+                            <li class="bx bxs-badge-check">
+                                <a href="https://www.gokevillediabetesfoundation.org"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    gokevillediabetesfoundation.org
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--=============== OTHER ENGINEERING PROJECTS ===============-->
+            <div class="work__card mix movil">
+                <img src="assets/img/others2.png" alt="Other Engineering Projects" class="work__img">
+
+                <h3 class="work__title">Other Engineering Projects</h3>
+
+                <span class="services__button">
+                    See More <i class="bx bx-right-arrow services__icon"></i>
+                </span>
+            </div>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class="bx bx-x services__modal-close"></i>
+
+                    <h3 class="services__modal-title">Other Engineering Projects</h3>
+
+                    <div class="services__modal-description">
+                        <ul>
+                            <li class="bx bxs-badge-check">
+                                IR remote controlled fan with proteus
+                            </li>
+
+                            <li class="bx bxs-badge-check">
+                                Rechargeable light with type c panel
+                            </li>
+
+                            <li class="bx bxs-badge-check">
+                                Solar stove with battery
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--=============== CONTACT ===============-->
+    <section class="contact section" id="contact">
+        <span class="section__subtitle">Get in touch</span>
+        <h3 class="section__title">Contact Me</h3>
+
+        <div class="contact__container container grid">
+
+            <div class="contact__content">
+                <h3 class="contact__title contact__title-info">
+                    Talk to me
+                </h3>
+
+                <div class="contact__info">
+
+                    <div class="contact__card">
+                        <i class="bx bx-mail-send contact__card-icon"></i>
+
+                        <h3 class="contact__card-title">Email</h3>
+                        <span class="contact__card-data">malphey04@gmail.com</span>
+
+                        <a href="mailto:malphey04@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact__button">
+                            Write Me <i class="bx bx-right-arrow contact__button-icon"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="contact__card">
+                        <i class="bx bxl-whatsapp contact__card-icon"></i>
+
+                        <h3 class="contact__card-title">Whatsapp</h3>
+                        <span class="contact__card-data">09133019321</span>
+
+                        <a href="https://api.whatsapp.com/send?phone=+2349133019321&text=Hey%20there!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact__button">
+                            Write Me <i class="bx bx-right-arrow contact__button-icon"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="contact__card">
+                        <i class="bx bxl-instagram contact__card-icon"></i>
+
+                        <h3 class="contact__card-title">Instagram</h3>
+                        <span class="contact__card-data">m.a.g_n.u.m</span>
+
+                        <a href="https://www.instagram.com/m.a.g_n.u.m"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact__button">
+                            Write Me <i class="bx bx-right-arrow contact__button-icon"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="contact__content">
+                <h3 class="contact__title contact__title-form">
+                    Write Me your Message
+                </h3>
+
+                <form id="contact-form"
+                    action="https://formspree.io/f/mdeozzbw"
+                    method="POST"
+                    class="contact__form">
+
+                    <div class="contact__form-div">
+                        <label for="contact-name" class="contact__form-tag">
+                            Name
+                        </label>
+
+                        <input type="text"
+                            id="contact-name"
+                            name="name"
+                            placeholder="Enter name"
+                            class="contact__form-input"
+                            required>
+                    </div>
+
+
+                    <div class="contact__form-div">
+                        <label for="contact-email" class="contact__form-tag">
+                            Mail
+                        </label>
+
+                        <input type="email"
+                            id="contact-email"
+                            name="email"
+                            placeholder="Enter email"
+                            class="contact__form-input"
+                            required>
+                    </div>
+
+
+                    <div class="contact__form-div contact__form-area">
+                        <label for="contact-message" class="contact__form-tag">
+                            Message
+                        </label>
+
+                        <textarea name="message"
+                            id="contact-message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Write your Message"
+                            class="contact__form-input"
+                            required></textarea>
+                    </div>
+
+
+                    <button id="submit-btn"
+                        type="submit"
+                        class="button">
+                        Send Message
+                    </button>
+
+                    <p id="form-status"></p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!--=============== FOOTER ===============-->
+<footer class="footer">
+    <div class="footer__container container">
+
+        <h1 class="footer__title">Magnum</h1>
+
+        <ul class="footer__list">
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">Home</a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#about" class="footer__link">About</a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#skills" class="footer__link">Skills</a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#process" class="footer__link">Process</a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#work" class="footer__link">Work</a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#contact" class="footer__link">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <ul class="footer__social">
+
+            <li class="footer__social-item">
+                <a href="https://www.facebook.com/share/1D1Z1Qkubw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__social-link"
+                    aria-label="Facebook">
+                    <i class="bx bxl-facebook footer__social-icon"></i>
+                </a>
+            </li>
+
+            <li class="footer__social-item">
+                <a href="https://www.instagram.com/m.a.g_n.u.m"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__social-link"
+                    aria-label="Instagram">
+                    <i class="bx bxl-instagram footer__social-icon"></i>
+                </a>
+            </li>
+
+            <li class="footer__social-item">
+                <a href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__social-link"
+                    aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin footer__social-icon"></i>
+                </a>
+            </li>
+
+            <li class="footer__social-item">
+                <a href="https://api.whatsapp.com/send?phone=+2349133019321&text=Hey%20there!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__social-link"
+                    aria-label="WhatsApp">
+                    <i class="bx bxl-whatsapp footer__social-icon"></i>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <span class="footer__copy">
+            &#169; 2026 MAGNUM. All rights reserved.
+        </span>
+
+    </div>
+</footer>
+
+
+<!--=============== SCROLLREVEAL ===============-->
+<!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== MIXITUP FILTER ===============-->
+<script src="assets/js/mixitup.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+
 </body>
-
 </html>
