@@ -1333,7 +1333,7 @@ body.light-theme {
 
 .gallery__item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   display: block;
 
