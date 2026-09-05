@@ -2266,3 +2266,780 @@ body.light-theme {
   }
 
 }
+/*==============================================================
+  FINAL RESPONSIVE LAYOUT OVERRIDES
+  - Keeps the original visual design intact
+  - Prevents horizontal overflow
+  - Uses fluid sizing between breakpoints
+  - Improves phones, tablets, laptops, desktops and TVs
+==============================================================*/
+
+/* ---------- Global responsive foundation ---------- */
+:root {
+  --page-gutter: clamp(1rem, 3vw, 4rem);
+  --section-gap: clamp(4rem, 8vw, 8rem);
+  --card-gap: clamp(1rem, 2vw, 2rem);
+  --content-max: 1400px;
+  --wide-content-max: 1680px;
+}
+
+html {
+  scroll-padding-top: calc(var(--header-height) + 1rem);
+}
+
+body {
+  min-width: 0;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+.container,
+.home__container,
+.about__container,
+.skills__container,
+.services__container,
+.process__container,
+.work__container,
+.contact__container,
+.footer__container,
+.gallery__container {
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-max));
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.grid {
+  width: 100%;
+}
+
+.section {
+  padding-block: clamp(4.5rem, 8vw, 8rem) clamp(1.5rem, 3vw, 3rem);
+}
+
+.section__title {
+  font-size: clamp(1.25rem, 1.6vw, 2rem);
+  line-height: 1.2;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.section__subtitle {
+  font-size: clamp(0.75rem, 0.9vw, 0.95rem);
+}
+
+/* ---------- Header / navigation ---------- */
+.header {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.nav {
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-max));
+  margin-inline: auto;
+  min-width: 0;
+}
+
+.nav__logo {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.nav__list,
+.nav__link {
+  min-width: 0;
+}
+
+.nav__link {
+  touch-action: manipulation;
+}
+
+@media screen and (max-width: 629px) {
+  .nav {
+    height: clamp(3.25rem, 10vw, 3.75rem);
+  }
+
+  .nav__menu {
+    width: min(calc(100vw - 1rem), 420px);
+    max-width: calc(100vw - 1rem);
+    left: 50%;
+    right: auto;
+    bottom: max(0.5rem, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    padding: clamp(0.7rem, 2.5vw, 1rem) clamp(1rem, 5vw, 2rem);
+  }
+
+  .nav__list {
+    gap: clamp(0.15rem, 1.5vw, 0.75rem);
+  }
+
+  .nav__link {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .nav__menu {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: min(328px, calc(100vw - 2rem));
+  }
+}
+
+/* ---------- Home ---------- */
+.home__container {
+  min-height: min(800px, 100svh);
+  align-content: center;
+}
+
+.home__data {
+  min-width: 0;
+}
+
+.home__name {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.home__greeting,
+.home__education {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.home__button {
+  flex-wrap: wrap;
+}
+
+.home__button .button {
+  min-width: 0;
+}
+
+.home__handle {
+  width: clamp(150px, 22vw, 290px);
+  height: clamp(245px, 31vw, 400px);
+}
+
+.home__img {
+  width: clamp(130px, 17vw, 220px);
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.home__social,
+.home__scroll {
+  max-width: 20vw;
+}
+
+@media screen and (max-width: 629px) {
+  .home__container {
+    min-height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 7rem;
+    row-gap: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .home__social {
+    left: 0;
+    bottom: 2rem;
+  }
+
+  .home__scroll {
+    right: 0;
+    bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .home__social,
+  .home__scroll {
+    display: none;
+  }
+
+  .home__button {
+    width: 100%;
+  }
+
+  .home__button .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  min-height: 44px;
+  max-width: 100%;
+  text-align: center;
+  overflow-wrap: anywhere;
+  padding-inline: clamp(0.9rem, 2vw, 1.25rem);
+}
+
+/* ---------- About ---------- */
+.about__container {
+  column-gap: clamp(2rem, 5vw, 6rem);
+  row-gap: clamp(2rem, 5vw, 4rem);
+}
+
+.about__img {
+  width: clamp(180px, 30vw, 380px);
+  max-height: min(520px, 60vh);
+  object-fit: cover;
+}
+
+.about__info {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.5rem, 1.5vw, 1.25rem);
+}
+
+.about__box,
+.skills__content,
+.services__card,
+.process__card,
+.work__card,
+.testimonial__card,
+.contact__card,
+.contact__form-div {
+  min-width: 0;
+}
+
+.about__description {
+  max-width: 70ch;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 629px) {
+  .about__info {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .about__box {
+    padding: 0.8rem 0.55rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about__info {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Skills ---------- */
+.skills__container {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--card-gap);
+  width: min(100%, var(--content-max));
+}
+
+.skills__content {
+  width: 100%;
+  padding: clamp(1.25rem, 3vw, 3rem);
+}
+
+.skills__box {
+  width: 100%;
+  justify-content: space-between;
+  gap: clamp(1.5rem, 5vw, 5rem);
+}
+
+.skills__group {
+  min-width: 0;
+}
+
+.skills__data {
+  min-width: 0;
+}
+
+.skills__name,
+.skills__level {
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 767px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .skills__content {
+    padding: 1.25rem 1rem;
+  }
+
+  .skills__box {
+    gap: 1rem;
+  }
+
+  .skills__name {
+    font-size: clamp(0.78rem, 3.4vw, 0.938rem);
+  }
+}
+
+/* ---------- Services / modal ---------- */
+.services__container {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--card-gap);
+  width: min(100%, var(--content-max));
+}
+
+.services__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: clamp(210px, 24vw, 320px);
+  padding: clamp(2rem, 4vw, 5rem) clamp(1rem, 2.5vw, 2rem) 1.5rem;
+}
+
+.services__title {
+  overflow-wrap: anywhere;
+}
+
+.services__modal {
+  padding: clamp(1rem, 4vw, 2rem);
+  overscroll-behavior: contain;
+}
+
+.services__modal-content {
+  width: min(100%, 680px);
+  max-height: min(90svh, 800px);
+  overflow-y: auto;
+  padding: clamp(3.5rem, 7vw, 4.5rem) clamp(1rem, 5vw, 2.5rem) clamp(2rem, 5vw, 2.5rem);
+}
+
+.services__modal-description {
+  max-width: 65ch;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .services__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .services__container {
+    grid-template-columns: 1fr;
+  }
+
+  .services__card {
+    min-height: 0;
+  }
+}
+
+/* ---------- Process ---------- */
+.process__container {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, var(--content-max));
+  gap: var(--card-gap);
+}
+
+.process__card {
+  height: 100%;
+}
+
+.process__description {
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 900px) {
+  .process__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .process__container {
+    grid-template-columns: 1fr;
+  }
+
+  .process__card {
+    padding: 1.5rem;
+  }
+}
+
+/* ---------- Work / portfolio ---------- */
+.work__container {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--card-gap);
+  width: min(100%, var(--content-max));
+}
+
+.work__filters {
+  flex-wrap: wrap;
+  row-gap: 0.6rem;
+  padding-inline: 0.25rem;
+}
+
+.work__item {
+  flex: 0 1 auto;
+  min-width: max-content;
+}
+
+.work__card {
+  width: 100%;
+  height: 100%;
+  padding: clamp(0.75rem, 1.5vw, 1.25rem);
+}
+
+.work__img {
+  width: 100%;
+  height: clamp(160px, 20vw, 280px);
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.work__title {
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 1000px) {
+  .work__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work__container {
+    grid-template-columns: 1fr;
+  }
+
+  .work__img {
+    height: clamp(180px, 55vw, 300px);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .work__filters {
+    column-gap: 0.25rem;
+  }
+
+  .work__item {
+    padding-inline: 0.55rem;
+    font-size: 0.78rem;
+  }
+}
+
+/* ---------- Image gallery ---------- */
+.gallery__container {
+  height: clamp(280px, 50vw, 560px);
+  max-height: 70svh;
+  overflow: hidden;
+}
+
+.gallery__columns {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.5rem, 1vw, 1rem);
+  padding: clamp(0.35rem, 1vw, 0.75rem);
+  align-items: start;
+}
+
+.gallery__column {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1.2vw, 1rem);
+}
+
+.gallery__item {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery__container {
+    width: calc(100% - 1rem);
+    height: clamp(300px, 100vw, 500px);
+  }
+
+  .gallery__columns {
+    gap: 0.4rem;
+    padding: 0.35rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gallery__container {
+    width: calc(100% - 0.75rem);
+  }
+}
+
+/* ---------- Testimonials ---------- */
+.testimonial__container {
+  width: min(100%, var(--content-max));
+}
+
+.testimonial__card {
+  width: 100%;
+  height: auto;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1rem, 2.5vw, 2rem);
+}
+
+.testimonial__description {
+  max-width: 70ch;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Contact ---------- */
+.contact__container {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: min(100%, var(--content-max));
+  gap: clamp(1.5rem, 5vw, 5rem);
+}
+
+.contact__info {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.contact__card,
+.contact__form {
+  width: 100%;
+  min-width: 0;
+}
+
+.contact__form-div {
+  width: 100%;
+}
+
+.contact__form-input,
+.contact__form-area textarea {
+  max-width: 100%;
+}
+
+.contact__form-area {
+  height: clamp(14rem, 30vw, 20rem);
+}
+
+@media screen and (max-width: 767px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .contact__card {
+    padding: 1.5rem 0.85rem;
+  }
+
+  .contact__form-input {
+    padding: 1.15rem;
+  }
+}
+
+/* ---------- Footer ---------- */
+.footer__container {
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-max));
+  padding-top: clamp(2rem, 5vw, 4rem);
+  padding-bottom: max(6rem, calc(2rem + env(safe-area-inset-bottom)));
+}
+
+.footer__list {
+  flex-wrap: wrap;
+  row-gap: 0.85rem;
+}
+
+.footer__copy {
+  max-width: 75ch;
+  margin-inline: auto;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 576px) {
+  .footer__list {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Safer spacing on very narrow screens ---------- */
+@media screen and (max-width: 320px) {
+  :root {
+    --page-gutter: 0.65rem;
+  }
+
+  .section {
+    padding-top: 4rem;
+  }
+
+  .about__box {
+    padding-inline: 0.45rem;
+  }
+
+  .services__card,
+  .process__card,
+  .work__card,
+  .testimonial__card {
+    border-radius: 1rem;
+  }
+}
+
+/* ---------- Large desktop ---------- */
+@media screen and (min-width: 1200px) {
+  :root {
+    --content-max: 1500px;
+  }
+
+  .home__container {
+    min-height: min(900px, 90svh);
+  }
+
+  .work__img {
+    height: clamp(220px, 19vw, 330px);
+  }
+}
+
+/* ---------- Very large desktop / TV ---------- */
+@media screen and (min-width: 1800px) {
+  :root {
+    --page-gutter: clamp(3rem, 4vw, 7rem);
+    --content-max: 1700px;
+  }
+
+  .container,
+  .home__container,
+  .about__container,
+  .skills__container,
+  .services__container,
+  .process__container,
+  .work__container,
+  .contact__container,
+  .footer__container,
+  .gallery__container {
+    width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-max));
+  }
+
+  .section__title {
+    font-size: 2.25rem;
+  }
+
+  .home__name {
+    font-size: clamp(3.5rem, 4vw, 5rem);
+  }
+
+  .home__handle {
+    width: 340px;
+    height: 470px;
+  }
+
+  .home__img {
+    width: 260px;
+  }
+
+  .about__img {
+    width: min(420px, 30vw);
+  }
+
+  .services__card,
+  .process__card {
+    padding-inline: 2.5rem;
+  }
+
+  .work__img {
+    height: clamp(260px, 18vw, 380px);
+  }
+}
+
+/* ---------- Ultra-wide displays ---------- */
+@media screen and (min-width: 2400px) {
+  :root {
+    --content-max: var(--wide-content-max);
+  }
+
+  body {
+    font-size: 1.08rem;
+  }
+
+  .section__title {
+    font-size: 2.5rem;
+  }
+
+  .work__container,
+  .services__container,
+  .process__container {
+    gap: 2.5rem;
+  }
+
+  .gallery__container {
+    height: min(650px, 55svh);
+  }
+}
+
+/* ---------- Motion / touch accessibility ---------- */
+@media (hover: none) {
+  .gallery__item:hover img {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Prevent long content from breaking cards ---------- */
+.home__data,
+.about__data,
+.skills__content,
+.services__card,
+.process__card,
+.work__card,
+.testimonial__card,
+.contact__card,
+.contact__form,
+.footer__container {
+  overflow-wrap: anywhere;
+}
+
+/* ---------- iOS / mobile viewport safety ---------- */
+@supports (height: 100dvh) {
+  .services__modal-content {
+    max-height: 90dvh;
+  }
+
+  .gallery__container {
+    max-height: 70dvh;
+  }
+}
