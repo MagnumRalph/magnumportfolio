@@ -1328,6 +1328,7 @@ body.light-theme {
 .gallery__item {
   overflow: hidden;
   height: auto;
+  object-fit: contain;
   border-radius: 1rem;
   background-color: var(--container-color);
 }
