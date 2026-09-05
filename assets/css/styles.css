@@ -1327,15 +1327,13 @@ body.light-theme {
 /* Gallery images */
 .gallery__item {
   overflow: hidden;
-  height: auto;
-  object-fit: contain;
   border-radius: 1rem;
   background-color: var(--container-color);
 }
 
 .gallery__item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   display: block;
 
